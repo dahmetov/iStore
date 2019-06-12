@@ -1,0 +1,12 @@
+name: product
+properties:
+- name: name
+  type: string
+- name: price
+  type: string
+- name: description
+  type: string
+- name: image_url
+  type: string
+- name: category_id
+  type: string

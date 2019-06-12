@@ -1,0 +1,4 @@
+name: category
+properties:
+- name: name
+  type: string

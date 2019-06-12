@@ -1,0 +1,31 @@
+{%- include 'layout/constants' -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%- include 'layout/head' -%}
+</head>
+<body>
+	<header>
+		{%- include 'layout/header' -%}
+    {%- include 'layout/breadcrumb' -%}
+	</header>
+	<main>
+		<div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          {%- include 'layout/left' -%}
+        </div>
+        <div class="col">
+         <div class="row">
+           {{ content_for_layout }}
+         </div>
+        </div>
+      </div>
+    </div>
+	</main>
+	<footer class="text-light">
+		{%- include 'layout/footer' -%}
+	</footer>
+	{%- include 'layout/foot' -%}
+</body>
+</html>
