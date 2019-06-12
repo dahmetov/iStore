@@ -1,0 +1,10 @@
+query get_current_user_data {
+  current_user {
+    id
+    name
+    email
+    profile(profile_type: "default") {
+      properties
+    }
+  }
+}

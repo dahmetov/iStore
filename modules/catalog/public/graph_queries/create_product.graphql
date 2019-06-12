@@ -1,0 +1,17 @@
+mutation addProduct($name: String, $image_url: String, $price: String, $description: String, $category_id: String) {
+  customization_create(
+    form_configuration_name: "modules/catalog/create_product"
+    customization: {
+      custom_model_type_name: "modules/catalog/product"
+      properties: [
+        { name: "name", value: $name },
+        { name: "price", value: $price },
+        { name: "description", value: $description },
+        { name: "category_id", value: $category_id },
+        { name: "image_url", value: $image_url }
+      ]
+    }
+  ) {
+    id
+  }
+}

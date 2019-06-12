@@ -1,0 +1,10 @@
+query products($ids: [ID], $limit: Int = 200) {
+  products: customizations(name: "modules/catalog/product", per_page: $limit, ids: $ids) {
+    total_entries
+    results {
+      properties
+      id
+      name
+    }
+  }
+}

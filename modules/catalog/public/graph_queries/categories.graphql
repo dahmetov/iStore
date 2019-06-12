@@ -1,0 +1,10 @@
+query categories($ids: [ID], $limit: Int = 200) {
+  categories: customizations(name: "modules/catalog/category", per_page: $limit, ids: $ids) {
+    total_entries
+    results {
+      properties
+      id
+      name
+    }
+  }
+}

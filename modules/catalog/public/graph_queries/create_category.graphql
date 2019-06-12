@@ -1,0 +1,13 @@
+mutation addCategiry($name: String) {
+  customization_create(
+    form_configuration_name: "modules/catalog/create_category"
+    customization: {
+      custom_model_type_name: "modules/catalog/category"
+      properties: [
+        { name: "name", value: $name }
+      ]
+    }
+  ) {
+    id
+  }
+}

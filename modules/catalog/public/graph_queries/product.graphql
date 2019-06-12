@@ -1,0 +1,10 @@
+query product($id: ID) {
+  product: customizations(name: "modules/catalog/product",  id: $id) {
+    total_entries
+    results {
+      properties
+      id
+      name
+    }
+  }
+}

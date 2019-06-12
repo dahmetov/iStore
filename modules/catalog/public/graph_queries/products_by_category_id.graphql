@@ -1,0 +1,18 @@
+query products_by_category_id($category_id: String) {
+  products: customizations(
+    name: "modules/catalog/product",
+    properties: [
+      {
+        name: "category_id"
+        value: $category_id
+      }
+    ]
+  ) {
+    total_entries
+    results {
+      properties
+      id
+      name
+    }
+  }
+}
