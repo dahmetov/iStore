@@ -1,0 +1,11 @@
+mutation delete_cart_item(
+  $id: ID!
+) {
+  customization_delete(
+    id: $id
+    form_configuration_name: "modules/cart/remove_from_cart"
+  ) {
+    id
+    properties
+  }
+}

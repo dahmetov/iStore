@@ -1,0 +1,77 @@
+---
+slug: cart
+layout_name: 2col
+authorization_policies:
+- modules/cart/require_user
+---
+{% graphql g = 'modules/cart/cart_with_product' %}
+{% if g.cart_items.total_entries != 0 %}
+  <div class="container">
+    <div class="row">
+      <table class="table table-bordered table-striped scroll">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% assign total = 0 %}
+        {% for item in g.cart_items.results %}
+          {% if item.product %}
+            {% assign total = total | plus: item.product.properties.price %}
+            <tr>
+              <td><a href="/product/show/{{ item.properties.product_id }}">{{ item.product.properties.name }}</a> </td>
+              <td> {{ item.product.properties.description | truncate: 70 }} </td>
+              <td> {{ item.product.properties.price }} $</td>
+              <td>{% include_form "modules/cart/remove_from_cart", id: item.id %}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+        <tr>
+          <td></td>
+          <td><strong>Total:</strong></td>
+          <td> {{ total }} $</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row float-right">
+      {% assign gateway_name = 'stripe' %}
+      {% export gateway_name, namespace: "payments"  %}
+
+      {%- parse_json 'data' -%}
+        {
+        "email": "{{ context.current_user.email }}",
+        "currency": "USD",
+        "description": "Charge Example",
+        "statement_descriptor": "Example 1.",
+        "capture": "true",
+        "amount": "{{ total | times: 100 }}"
+        }
+      {%- endparse_json -%}
+
+      {%- parse_json 'config' -%}
+        {
+        "button": "Pay Now",
+        "request_type": "create_payment",
+        "redirect_to": "/"
+        }
+      {%- endparse_json -%}
+
+      {%-
+        include_form 'modules/payments/gateway_request_form',
+        config: config,
+        data: data
+      %}
+    </div>
+  </div>
+{% else %}
+  <div class="alert alert-primary no-products" role="alert">
+    Cart is empty
+  </div>
+{% endif %}
+

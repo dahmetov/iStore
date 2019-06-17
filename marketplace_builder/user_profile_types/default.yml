@@ -1,6 +1,6 @@
 name: default
-properties:
-- name: admin
-  attribute_type: boolean
-- name: password_token
-  type: string
+custom_attributes:
+  - name: phone
+    attribute_type: string
+  - name: admin
+    attribute_type: boolean

@@ -1,0 +1,6 @@
+name: cart
+properties:
+- name: user_id
+  type: string
+- name: product_id
+  type: string

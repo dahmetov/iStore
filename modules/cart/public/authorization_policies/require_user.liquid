@@ -1,0 +1,6 @@
+---
+name: require_user
+redirect_to: sign-in
+flash_alert: Please Sign-In
+---
+{% if context.current_user.id != blank %}true{% endif %}

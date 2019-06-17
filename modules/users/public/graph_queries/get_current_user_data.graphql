@@ -3,7 +3,9 @@ query get_current_user_data {
     id
     name
     email
-    profile(profile_type: "default") {
+    properties
+    profiles {
+      profile_type
       properties
     }
   }

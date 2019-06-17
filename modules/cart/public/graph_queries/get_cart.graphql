@@ -1,0 +1,18 @@
+query getCart($user_id: String) {
+  product_ids: customizations(
+    name: "modules/cart/cart",
+    properties: [
+      {
+        name: "user_id"
+        value: $user_id
+      }
+    ]
+  ) {
+    total_entries
+    results {
+      properties
+      id
+      product_id: property(name: "product_id")
+    }
+  }
+}

@@ -1,0 +1,64 @@
+---
+name: product
+resource: modules/catalog/product
+fields:
+  properties:
+    name:
+      validation:
+        presence: true
+    description:
+      validation:
+        presence: true
+    price:
+      validation:
+        presence: true
+        numericality:
+          greater_than: 0
+    category_id:
+      validation:
+        presence: true
+redirect_to: /
+flash_notice: "Product successfully created"
+flash_alert: "Please fix validation errors"
+---
+{% graphql g = 'modules/catalog/categories' %}
+
+{% parse_json category_options %}
+  {
+    {% for category in g.categories.results %}
+      {% unless forloop.first %},{% endunless %}
+      "{{ category.id }}" : {{ category.properties.name | json }}
+    {% endfor %}
+  }
+{% endparse_json %}
+
+{% form -%}
+  {%
+    include "forms/fields/text",
+    label: "Name",
+    type: "text",
+    field: form_builder.fields.properties.name,
+  %}
+  {%
+    include "forms/fields/text",
+    label: "Price",
+    type: "number",
+    field: form_builder.fields.properties.price,
+  %}
+  {%
+    include "forms/fields/select",
+    label: "Category",
+    field: form_builder.fields.properties.category_id,
+    include_blank: "Select Category",
+    options: category_options
+  %}
+  {%
+    include "forms/fields/textarea",
+    label: "Description",
+    field: form_builder.fields.properties.description,
+    rows: 5
+  %}
+  <div class="form-group">
+    <button class="btn btn-primary">Save</button>
+  </div>
+{% endform -%}

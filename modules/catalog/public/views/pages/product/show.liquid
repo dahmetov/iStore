@@ -3,6 +3,7 @@ slug: product/show
 layout_name: 2col
 ---
 {% graphql g = "modules/catalog/product", id: context.params.slug3 %}
+{% assign product = g.product.results.first %}
 <div class="container">
   <h1 class="my-4">{{ g.product.results.first.properties.name }}
     <small>
@@ -29,7 +30,7 @@ layout_name: 2col
       </ul>
       <hr>
       <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
-      <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+      {% include_form "modules/cart/add_to_cart_blue" with product %}
     </div>
   </div>
 </div>

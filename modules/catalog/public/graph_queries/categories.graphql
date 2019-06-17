@@ -1,10 +1,18 @@
 query categories($ids: [ID], $limit: Int = 200) {
-  categories: customizations(name: "modules/catalog/category", per_page: $limit, ids: $ids) {
+  categories: customizations(
+    name: "modules/catalog/category",
+    per_page: $limit,
+    ids: $ids
+  ) {
     total_entries
     results {
       properties
       id
       name
+      parent_id: property(name: "parent_id")
+      parent: model(join_on_property: "parent_id") {
+        id
+      }
     }
   }
 }

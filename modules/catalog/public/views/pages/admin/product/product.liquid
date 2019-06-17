@@ -1,0 +1,14 @@
+---
+slug: admin/product
+layout_name: 2col
+authorization_policies: [modules/users/admin_user]
+---
+<div class="container">
+  {% if params.slug3 == "new" %}
+    {% include "modules/catalog/admin/product/new" %}
+    {% elsif params.slugs == "edit" %}
+    {% include "modules/catalog/admin/product/edit", id: params.slug3 %}
+  {% else %}
+    {% include "modules/catalog/admin/product/show", id: params.slug3 %}
+  {% endif %}
+</div>

@@ -1,23 +1,26 @@
 ---
 slug: catalog/categories/all
 layout_name: 2col
+authorization_policies: [modules/users/admin_user]
 ---
 {% graphql g = 'modules/catalog/categories' %}
-<a href="/categories/new" class="btn btn-success float-right">New category</a>
-<table class="table table-bordered table-striped scroll">
-  <thead>
+<div class="container">
+  <a href="/categories/new" class="btn btn-success float-right">New category</a>
+  <table class="table table-bordered table-striped scroll">
+    <thead>
     <tr>
       <th>ID</th>
       <th>Name</th>
     </tr>
-  </thead>
-  <tbody>
-  {% for category in g.categories.results %}
-    <tr>
-      <td> {{ category.id }} </td>
-      <td> {{ category.properties.name }} </td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+    {% for category in g.categories.results %}
+      <tr>
+        <td> {{ category.id }} </td>
+        <td> {{ category.properties.name }} </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
 

@@ -1,0 +1,7 @@
+{% comment %}
+  Required params:
+  error: string
+{% endcomment %}
+{%- if error != blank -%}
+  <div><small class="text-danger">{{ error }}</small></div>
+{%- endif -%}

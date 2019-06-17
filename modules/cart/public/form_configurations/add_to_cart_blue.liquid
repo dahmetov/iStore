@@ -1,0 +1,22 @@
+---
+name: add_to_cart_blue
+resource: modules/cart/cart
+return_to: /cart
+fields:
+  properties:
+    user_id:
+      validation:
+        presence: true
+    product_id:
+      validation:
+        presence: true
+authorization_policies:
+- modules/cart/require_user
+---
+{% form method: "post" %}
+  <input class="hidden" value="{{ context.current_user.id }}" name="{{ form_builder.fields.properties.user_id.name }}" type="hidden">
+  <input class="hidden" value="{{ product.id }}" name="{{ form_builder.fields.properties.product_id.name }}" type="hidden">
+  <button class="btn btn-lg btn-outline-primary text-uppercase">
+    <i class="fas fa-shopping-cart"></i> Add to cart
+  </button>
+{% endform %}

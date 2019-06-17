@@ -101,3 +101,20 @@ footer a {
   text-decoration: none;
   text-underline: none;
 }
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.icon-button {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+
+.nav-link[data-toggle].collapsed:after {
+  content: "▾";
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+  content: "▴";
+}

@@ -1,0 +1,9 @@
+---
+name: admin_user
+redirect_to: /
+flash_alert: Sorry, you have to be an admin user to access this page.
+---
+{% parse_json current_user %}
+  {% include 'modules/users/shared/get_current_user' %}
+{% endparse_json %}
+{% if current_user.has_admin_access %}true{% endif %}

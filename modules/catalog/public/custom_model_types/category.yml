@@ -2,3 +2,5 @@ name: category
 properties:
 - name: name
   type: string
+- name: parent_id
+  type: string

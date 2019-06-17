@@ -2,24 +2,37 @@
 name: create_category
 fields:
   properties:
+    parent_id:
+      validation:
     name:
       validation: { presence: true }
 redirect_to: /catalog/categories/all
 resource: modules/catalog/category
-async_callback_actions: {}
+flash_notice: "Category successfully created"
 ---
+{% graphql g = 'modules/catalog/categories' %}
+
+{% parse_json category_options %}
+  {
+  {% for category in g.categories.results %}
+    {% unless forloop.first %},{% endunless %}
+    "{{ category.id }}" : {{ category.properties.name | json }}
+  {% endfor %}
+  }
+{% endparse_json %}
 {% form -%}
-
-  <div class="row">
-    <div class="col-xs-12 col-md-4">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input required="true" name="{{ form_builder.fields.properties.name.name }}" id="name" type="text" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary">Add category</button>
-      </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input required="true" name="{{ form_builder.fields.properties.name.name }}" id="name" type="text" class="form-control" required>
     </div>
-  </div>
-
+  {%
+    include "forms/fields/select",
+    label: "Category",
+    field: form_builder.fields.properties.parent_id,
+    include_blank: "Select Category",
+    options: category_options
+  %}
+    <div class="form-group">
+      <button class="btn btn-primary">Add category</button>
+    </div>
 {% endform -%}

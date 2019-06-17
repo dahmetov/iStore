@@ -1,10 +1,11 @@
-mutation addCategiry($name: String) {
+mutation addCategiry($name: String, $parent_id: String) {
   customization_create(
     form_configuration_name: "modules/catalog/create_category"
     customization: {
       custom_model_type_name: "modules/catalog/category"
       properties: [
-        { name: "name", value: $name }
+        { name: "name", value: $name },
+        { name: "parent_id", value: $parent_id }
       ]
     }
   ) {
