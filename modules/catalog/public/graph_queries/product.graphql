@@ -5,6 +5,9 @@ query product($id: ID) {
       properties
       id
       name
+      category: model(join_on_property: "category_id") {
+        name: property(name: "name")
+      }
     }
   }
 }

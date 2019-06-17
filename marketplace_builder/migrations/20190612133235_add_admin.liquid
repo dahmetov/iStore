@@ -1,0 +1,3 @@
+{% query_graph 'modules/users/get_user', result_name: g, email: "daniar.ahmetov@zensoft.io" %}
+{% assign user_id = g.users.first.id %}
+{% execute_query "modules/users/promote_user_to_admin", id: user_id %}

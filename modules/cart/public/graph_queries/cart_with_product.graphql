@@ -1,0 +1,12 @@
+query cart_with_product {
+  cart_items: customizations(name: "modules/cart/cart", per_page: 200) {
+    total_entries
+    results {
+      id
+      properties
+      product: model(join_on_property: "product_id") {
+        properties
+      }
+    }
+  }
+}

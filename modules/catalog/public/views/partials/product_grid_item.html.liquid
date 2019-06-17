@@ -1,0 +1,39 @@
+{% graphql gc = 'modules/cart/get_cart', user_id: context.current_user.id %}
+
+{% if g.products.results != blank %}
+  {% for product in g.products.results %}
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="image-wrapper">
+          <img class="card-img-top" src="{{ product.properties.image_url }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"><a href="/product/show/{{ product.id }}" title="View Product">{{ product.properties.name }}</a></h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="row">
+            <div class="col">
+              <p class="btn btn-primary btn-block">{{ product.properties.price }} $</p>
+            </div>
+            <div class="col">
+              {% assign cart_id = 0 %}
+              {% for cart_item in gc.product_ids.results %}
+                {% if cart_item.product_id == product.id %}
+                  {% assign cart_id = cart_item.id %}
+                {% endif %}
+              {% endfor %}
+              {% if cart_id != 0 %}
+                {% include_form "modules/cart/remove_from_cart", id: cart_id %}
+              {% else %}
+                {% include_form "modules/cart/add_to_cart" with product %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <div class="alert alert-primary no-products" role="alert">
+    No any products yet
+  </div>
+{% endif %}

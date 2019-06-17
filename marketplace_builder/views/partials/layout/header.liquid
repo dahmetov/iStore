@@ -1,4 +1,8 @@
 {% graphql g = 'modules/catalog/categories' %}
+{% graphql gc = 'modules/cart/get_cart', user_id: context.current_user.id %}
+{% parse_json current_user %}
+  {% include 'modules/users/shared/get_current_user' %}
+{% endparse_json %}
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">ECommerce</a>
@@ -35,11 +39,14 @@
           </div>
         </div>
         {% if context.current_user %}
-          <a class="btn btn-success btn-sm ml-3" href="cart.html">
+          <a class="btn btn-success btn-sm ml-3" href="/cart">
             <i class="fa fa-shopping-cart"></i> Cart
-            <span class="badge badge-light">3</span>
+            <span class="badge badge-light">{{ gc.product_ids.total_entries }}</span>
           </a>
-          {% include_form 'modules/users/sign_out_form' %}
+          {% if current_user.has_admin_access %}
+            <a href="/admin" class="right-nav-links">Admin</a>
+          {% endif %}
+          {% include_form 'modules/users/sign_out' %}
         {% else %}
           <a class="right-nav-links" href="/sign-in">Log In</a>
           <a class="right-nav-links" href="/sign-up">Register</a>

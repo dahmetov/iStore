@@ -1,0 +1,32 @@
+---
+slug: admin/products
+layout_name: 2col
+authorization_policies: [modules/users/admin_user]
+---
+{% graphql g = 'modules/catalog/products' %}
+<div class="container">
+  <a href="/admin/product/new" class="btn btn-success float-right">New Product</a>
+  <table class="table table-bordered table-striped scroll">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for product in g.products.results %}
+      <tr>
+        <td> {{ product.id }} </td>
+        <td> {{ product.properties.name }} </td>
+        <td> {{ product.properties.price }} </td>
+        <td><a href="/admin/product/{{ product.id }}" class="btn btn-success icon-button"><i class="fa fa-eye"></i></a></td>
+        <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+

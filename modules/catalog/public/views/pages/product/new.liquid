@@ -1,6 +1,9 @@
 ---
-slug: product/new
+slug: admin/product/new
 layout_name: 2col
+authorization_policies: [modules/users/admin_user]
 ---
-<h1>Create new product</h1>
-{% include_form 'modules/catalog/create_product', resource_type: 'modules/catalog/product' %}
+<div class="container">
+  <h1>Create new product</h1>
+  {% include_form 'modules/catalog/create_product', resource_type: 'modules/catalog/product' %}
+</div>

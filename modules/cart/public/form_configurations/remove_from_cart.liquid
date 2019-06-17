@@ -1,0 +1,10 @@
+---
+name: remove_from_cart
+resource: modules/cart/cart
+return_to: /
+flash_notice: Product successfully removed from cart
+---
+
+{% form method: "delete" %}
+  <button class="btn btn-danger btn-block">Remove</button>
+{% endform %}

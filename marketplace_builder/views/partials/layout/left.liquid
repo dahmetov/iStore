@@ -1,20 +1,45 @@
 {% graphql g = 'modules/catalog/categories' %}
+{% parse_json category_options %}
+  {
+  {% for category in g.categories.results %}
+    {% unless forloop.first %},{% endunless %}
+    "{{ category.id }}" : {{ category.properties.name | json }}
+  {% endfor %}
+  }
+{% endparse_json %}
+
+{% assign empty_array = "[]" | parse_json %}
+
+{% assign category_ids = empty_array %}
+{% assign parent_cats = empty_array %}
+{% for category in g.categories.results %}
+  {% assign category_id = "{}" | parse_json | add_hash_key: category.id, category.properties %}
+  {% assign category_ids = category_ids | add_to_array: category_id %}
+
+  {% assign parent_cat = "{}" | parse_json | add_hash_key: category.parent_id, category.id %}
+  {% assign parent_cats = parent_cats | add_to_array: parent_cat %}
+{% endfor %}
+
+{% assign categories = "{}" | parse_json | add_hash_key: "categories", category_ids | add_hash_key: "parent_cats", parent_cats %}
+
+{{ categories }}
+
+
+
 <div class="card bg-light mb-3">
   <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
-  <ul class="list-group category_block">
-    {% for category in g.categories.results %}
-      <li class="list-group-item">
-        <a href="/category/show/{{ category.id }}">{{ category.properties.name }}</a>
-      </li>
+  <ul class="nav flex-column flex-nowrap">
+    {% for parent in categories.parent_cats %}
+      {{ parent }}
     {% endfor %}
   </ul>
 </div>
 <div class="card bg-light mb-3">
   <div class="card-header bg-success text-white text-uppercase">Last product</div>
   <div class="card-body">
-    <img class="img-fluid" src="https://dummyimage.com/600x400/55595c/fff" />
-    <h5 class="card-title">Product title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <p class="bloc_left_price">99.00 $</p>
+    <img class="img-fluid" src="{{ gp.products.results[0].properties.image_url }}" />
+    <h5 class="card-title">{{ gp.products.results[0].properties.name }}</h5>
+    <p class="card-text">{{ gp.products.results[0].properties.description | truncate: 200 }}</p>
+    <p class="bloc_left_price">{{ gp.products.results[0].properties.price }} $</p>
   </div>
 </div>
