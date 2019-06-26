@@ -2,90 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="008ec762-70c2-40de-a1a6-97f5f0c5fa86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/notifications/api_call_notifications/ping_example_com_on_user_sign_up.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/notifications/email_notifications/welcome_user.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/notifications/sms_notifications/welcome_user.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/error.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/radio_group.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/select.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/text.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/textarea.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/forms/label.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/shared/flash-messages.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/authorization_policies/require_user.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/custom_model_types/cart.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/form_configurations/add_to_cart.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/form_configurations/add_to_cart_blue.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/form_configurations/remove_from_cart.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/graph_queries/cart_with_product.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/graph_queries/delete_cart_item.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/graph_queries/get_cart.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/views/pages/all.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cart/public/views/partials/list.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/assets/UploadProductImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/custom_model_types/photo.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_photo.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/form_configurations/destroy_photo.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/form_configurations/destroy_product_form.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/form_configurations/product.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/graph_queries/get_photos.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/product/product.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/product/products.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/edit.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/new.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/photos.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/show.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/forms/upload/s3_script.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/product_grid_item.html.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/shared/parse_categories.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/catalog/public/views/partials/shared/upload_product_image.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/payments" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/stripe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/public/authorization_policies/admin_user.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/public/form_configurations/promote_user_to_admin_form.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/mutations/promote_user_to_admin.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/mutations/set_user_password.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/public/views/partials/shared/get_current_user.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/test/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/users/test/page-object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/mutations/sign_in.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/users/public/views/pages/api/sign_in.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketplace_builder/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketplace_builder/user_profile_types/default.yml" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/user_profile_types/default.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketplace_builder/views/layouts/2col.html.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/views/layouts/2col.html.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketplace_builder/views/pages/home.html.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/views/pages/home.html.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/head.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/head.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/header.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/header.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/left.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_builder/views/partials/layout/left.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/custom_model_types/category.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/custom_model_types/category.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/custom_model_types/product.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/custom_model_types/product.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_product.liquid" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/graph_queries/create_category.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/graph_queries/create_category.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/graph_queries/product.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/graph_queries/product.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/all.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/all.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/new.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/new.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/show.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/categories/show.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/product/new.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/product/new.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/product/show.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/product/show.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/payments/public/form_configurations/gateway_request_form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/payments/public/form_configurations/gateway_request_form.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/stripe/private/migrations/20190401101011_add_gateway_keys.liquid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/stripe/public/views/partials/card/form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stripe/public/views/partials/card/form.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/stripe/template-values.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stripe/template-values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/custom_model_types/reset_password.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_in.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_in.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_out_form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_out.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_up.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/form_configurations/sign_up.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/graph_queries/get_current_user_data.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/get_current_user_data.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/stripe" beforeDir="false" afterPath="$PROJECT_DIR$/modules/stripe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/users/public/graph_queries/generate_user_temporary_token.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/generate_user_temporary_token.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/users/public/graph_queries/get_user.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/graph_queries/get_user.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/graph_queries/update_password_token.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/migrations/20181120102959_add_admin.liquid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/views/pages/recover_password.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/views/pages/recover_password.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/views/pages/reset-password.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/views/pages/reset-password.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/users/public/views/pages/sign_in.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/views/pages/sign_in.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/users/public/views/pages/sign_up.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/modules/users/public/views/pages/sign_up.liquid" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -103,46 +31,48 @@
         <counts>
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="11" />
+          <entry key="LICENSE" value="1" />
+          <entry key="css" value="12" />
           <entry key="gitignore" value="4" />
           <entry key="gitmodules" value="1" />
-          <entry key="graphql" value="76" />
-          <entry key="js" value="10" />
-          <entry key="json" value="5" />
+          <entry key="graphql" value="85" />
+          <entry key="js" value="11" />
+          <entry key="json" value="6" />
           <entry key="keep" value="1" />
-          <entry key="liquid" value="415" />
-          <entry key="marketplace-kit" value="5" />
+          <entry key="liquid" value="454" />
+          <entry key="marketplace-kit" value="6" />
           <entry key="md" value="1" />
-          <entry key="sh" value="1" />
+          <entry key="sh" value="3" />
           <entry key="yaml" value="5" />
-          <entry key="yml" value="55" />
+          <entry key="yml" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="11" />
-          <entry key="GraphQL" value="76" />
-          <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="10" />
+          <entry key="CSS" value="12" />
+          <entry key="GraphQL" value="85" />
+          <entry key="JSON" value="6" />
+          <entry key="JavaScript" value="11" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Twig" value="415" />
-          <entry key="YAML" value="60" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Twig" value="454" />
+          <entry key="YAML" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="314" />
           <entry key="gitignore" value="9" />
-          <entry key="graphql" value="888" />
-          <entry key="liquid" value="4863" />
+          <entry key="graphql" value="1021" />
+          <entry key="liquid" value="5892" />
           <entry key="marketplace-kit" value="11" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="85" />
           <entry key="yaml" value="52" />
           <entry key="yml" value="92" />
         </counts>
@@ -150,9 +80,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="314" />
-          <entry key="GraphQL" value="888" />
-          <entry key="PLAIN_TEXT" value="95" />
-          <entry key="Twig" value="4863" />
+          <entry key="GraphQL" value="1021" />
+          <entry key="PLAIN_TEXT" value="105" />
+          <entry key="Twig" value="5892" />
           <entry key="YAML" value="144" />
         </counts>
       </usages-collector>
@@ -165,47 +95,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/cart/public/views/pages/all.liquid">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/categories/all.liquid">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/left.liquid">
+        <entry file="file://$PROJECT_DIR$/modules/users/public/views/pages/api/sign_in.liquid">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="713">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql">
+        <entry file="file://$PROJECT_DIR$/modules/users/public/graph_queries/mutations/sign_in.graphql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/users/public/form_configurations/sign_in.liquid">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -221,8 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form_profiles_attributes_developer_attributes_enabled</find>
-      <find>deve</find>
       <find>developer</find>
       <find>defa</find>
       <find>products_by_category_id</find>
@@ -242,7 +152,6 @@
       <find>client_sign_up</find>
       <find>client</find>
       <find>get_user</find>
-      <find>get_current_user_data</find>
       <find>get_curre</find>
       <find>modules/users/promote_user_to_admin_form</find>
       <find>update_users</find>
@@ -251,6 +160,9 @@
       <find>profile</find>
       <find>categories</find>
       <find>asdf</find>
+      <find>get_current_user_data</find>
+      <find>generate_user_temporary_token</find>
+      <find>stripe_pk_key</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/modules/cart/public/graph_queries</dir>
@@ -267,13 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/marketplace_builder/migrations/20181120102959_add_admin.liquid" />
-        <option value="$PROJECT_DIR$/marketplace_builder/authorization_policies/admin_user.liquid" />
-        <option value="$PROJECT_DIR$/modules/users/public/graph_queries/mutations/promote_user_to_admin.graphql" />
-        <option value="$PROJECT_DIR$/modules/users/public/custom_model_types/reset_password.yml" />
-        <option value="$PROJECT_DIR$/marketplace_builder/migrations/20190612133235_add_admin.liquid" />
-        <option value="$PROJECT_DIR$/modules/users/public/form_configurations/sign_up.liquid" />
-        <option value="$PROJECT_DIR$/modules/users/public/graph_queries/get_user.graphql" />
         <option value="$PROJECT_DIR$/modules/users/public/custom_model_types/admin.yml" />
         <option value="$PROJECT_DIR$/marketplace_builder/views/partials/shared/get_current_user.liquid" />
         <option value="$PROJECT_DIR$/marketplace_builder/user_profile_types/default.yml" />
@@ -313,11 +218,18 @@
         <option value="$PROJECT_DIR$/modules/catalog/public/graph_queries/get_photos.graphql" />
         <option value="$PROJECT_DIR$/modules/catalog/public/custom_model_types/category.yml" />
         <option value="$PROJECT_DIR$/modules/catalog/public/graph_queries/create_category.graphql" />
-        <option value="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid" />
         <option value="$PROJECT_DIR$/marketplace_builder/assets/styles/app.css" />
-        <option value="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid" />
-        <option value="$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql" />
         <option value="$PROJECT_DIR$/marketplace_builder/views/partials/layout/left.liquid" />
+        <option value="$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql" />
+        <option value="$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid" />
+        <option value="$PROJECT_DIR$/modules/users/public/views/pages/sign_in.liquid" />
+        <option value="$PROJECT_DIR$/modules/users/public/graph_queries/mutations/sign_in.graphql" />
+        <option value="$PROJECT_DIR$/marketplace_builder/views/layouts/2col.html.liquid" />
+        <option value="$PROJECT_DIR$/.marketplace-kit" />
+        <option value="$PROJECT_DIR$/modules/users/public/views/pages/api/sign_in.liquid" />
+        <option value="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid" />
+        <option value="$PROJECT_DIR$/modules/users/public/graph_queries/get_user.graphql" />
+        <option value="$PROJECT_DIR$/modules/users/public/graph_queries/generate_user_temporary_token.graphql" />
       </list>
     </option>
   </component>
@@ -360,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,56 +283,73 @@
             <path>
               <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="iStore" type="462c0819:PsiDirectoryNode" />
-              <item name="marketplace_builder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iStore" type="462c0819:PsiDirectoryNode" />
-              <item name="marketplace_builder" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iStore" type="462c0819:PsiDirectoryNode" />
-              <item name="marketplace_builder" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iStore" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="iStore" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="iStore" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="iStore" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="graph_queries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStore" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_queries" type="462c0819:PsiDirectoryNode" />
+              <item name="mutations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStore" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStore" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStore" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="left&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/marketplace_builder/views/partials/layout/left.liquid&#10;product_grid_item&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/catalog/public/views/partials/product_grid_item.html.liquid&#10;get_current_user&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/views/partials/shared/get_current_user.liquid&#10;promote_user_to_admin&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/graph_queries/mutations/promote_user_to_admin.graphql&#10;gateway_request_form&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/payments/public/form_configurations/gateway_request_form.liquid" />
+    <property name="SearchEverywhereHistoryKey" value="gener&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/graph_queries/generate_user_temporary_token.graphql&#10;generate_user_temporary_token&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/graph_queries/generate_user_temporary_token.graphql&#10;left&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/marketplace_builder/views/partials/layout/left.liquid&#10;product_grid_item&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/catalog/public/views/partials/product_grid_item.html.liquid&#10;get_current_user&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/views/partials/shared/get_current_user.liquid&#10;promote_user_to_admin&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/users/public/graph_queries/mutations/promote_user_to_admin.graphql&#10;gateway_request_form&#9;FILE&#9;file:///home/dakhmetov/Projects/platformOS/iStore/modules/payments/public/form_configurations/gateway_request_form.liquid" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/e-commerce" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -428,11 +358,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/users/public/views/pages/api" />
       <recent name="$PROJECT_DIR$/modules/catalog/public/views/partials/forms" />
       <recent name="$PROJECT_DIR$/modules/catalog/public/form_configurations" />
       <recent name="$PROJECT_DIR$/modules/catalog/public/views/partials" />
       <recent name="$PROJECT_DIR$/modules/catalog/public/graph_queries" />
-      <recent name="$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/catalog/public/views/pages/admin/product" />
@@ -465,7 +395,8 @@
       <option name="presentableId" value="Default" />
       <updated>1559793735271</updated>
       <workItem from="1559793736583" duration="64736000" />
-      <workItem from="1560402607440" duration="40644000" />
+      <workItem from="1560402607440" duration="56034000" />
+      <workItem from="1560914845350" duration="8086000" />
     </task>
     <task id="LOCAL-00001" summary="Shop registration adding product adding category login&#10;View Product pages">
       <created>1560312535501</created>
@@ -474,17 +405,34 @@
       <option name="project" value="LOCAL" />
       <updated>1560312535501</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User roles">
+      <created>1560750555243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560750555243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105380000" />
+    <option name="totallyTimeSpent" value="128856000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1017" height="1924" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34397528" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944258" weight="0.35633367" />
+      <window_info id="Structure" order="1" sideWeight="0.5005574" side_tool="true" weight="0.1246138" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -492,12 +440,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.1889632" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="GraphQL" order="9" weight="0.32998884" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25975475" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.47770345" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -513,248 +461,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Shop registration adding product adding category login&#10;View Product pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shop registration adding product adding category login&#10;View Product pages" />
+    <MESSAGE value="User roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="User roles" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/product/show.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/users/public/views/partials/shared/get_current_user.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/users/public/authorization_policies/admin_user.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/users/public/form_configurations/sign_out.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/header.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/error.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/label.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/assets.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/assets/UploadProductImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="66" lean-forward="true" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/custom_model_types/photo.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/textarea.liquid">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/text.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/select.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/radio_group.liquid">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/custom_model_types/product.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/pages/home.html.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/head.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/product/new.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/edit.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/products.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/new.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/_stock_levels.liquid">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/_index.liquid">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/admin/edit_product.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/forms/upload/s3_script.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/destroy_photo.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/photos.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/admin/product/show.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/get_photos.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/custom_model_types/category.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/create_category.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/product.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/destroy_product_form.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/create_photo.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketplace_builder/assets/styles/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1076">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/product.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/categories/new.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/partials/shared/upload_product_image.liquid">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -769,13 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -806,10 +509,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql">
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/assets/styles/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="1122">
+          <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/categories/all.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -820,24 +530,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid">
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/form_configurations/create_category.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/categories/all.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="460">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/left.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/categories.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/graph_queries/get_photos.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/partials/forms/gateway_request_default_payload.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/assets/UploadProductImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/partials/api_create_payment.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/partials/api_create_transfer.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/partials/capture_payment.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/partials/config.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/public/views/pages/webhooks/listen.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/views/partials/shared/get_current_user.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/form_configurations/recover_password_form.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/graph_queries/get_current_user_data.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.marketplace-kit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/views/pages/sign_in.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/user_profile_types/default.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/scripts/new_version.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/template-values.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/graph_queries/generate_user_temporary_token.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/graph_queries/get_user.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/categories/new.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/layouts/2col.html.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/catalog/public/views/pages/admin/index.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/breadcrumb.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/forms/fields/text.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="98" column="46" lean-forward="true" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/constants.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/foot.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/footer.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/head.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketplace_builder/views/partials/layout/header.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/payments/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/public/graph_queries/set_constant.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/public/views/partials/webhook_processors/account_updated.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/public/views/pages/webhooks/listen.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/public/views/partials/response_mapper/delete_credit_card.liquid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/stripe/public/views/partials/response_mapper/capture_payment.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/form_configurations/sign_in.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/graph_queries/mutations/sign_in.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/users/public/views/pages/api/sign_in.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

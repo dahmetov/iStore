@@ -10,9 +10,6 @@ query categories($ids: [ID], $limit: Int = 200) {
       id
       name
       parent_id: property(name: "parent_id")
-      parent: model(join_on_property: "parent_id") {
-        id
-      }
     }
   }
 }

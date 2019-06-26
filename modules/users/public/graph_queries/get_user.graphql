@@ -3,6 +3,7 @@ query get_user($id: ID, $email: String, $slug: String) {
     id
     name
     email
+    slug
     profile(profile_type: "default") {
       properties
     }

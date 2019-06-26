@@ -1,36 +1,23 @@
 {% graphql g = 'modules/catalog/categories' %}
-{% parse_json category_options %}
-  {
-  {% for category in g.categories.results %}
-    {% unless forloop.first %},{% endunless %}
-    "{{ category.id }}" : {{ category.properties.name | json }}
-  {% endfor %}
-  }
-{% endparse_json %}
-
-{% assign empty_array = "[]" | parse_json %}
-
-{% assign category_ids = empty_array %}
-{% assign parent_cats = empty_array %}
-{% for category in g.categories.results %}
-  {% assign category_id = "{}" | parse_json | add_hash_key: category.id, category.properties %}
-  {% assign category_ids = category_ids | add_to_array: category_id %}
-
-  {% assign parent_cat = "{}" | parse_json | add_hash_key: category.parent_id, category.id %}
-  {% assign parent_cats = parent_cats | add_to_array: parent_cat %}
-{% endfor %}
-
-{% assign categories = "{}" | parse_json | add_hash_key: "categories", category_ids | add_hash_key: "parent_cats", parent_cats %}
-
-{{ categories }}
-
-
 
 <div class="card bg-light mb-3">
   <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
   <ul class="nav flex-column flex-nowrap">
-    {% for parent in categories.parent_cats %}
-      {{ parent }}
+    {% for category in g.categories.results %}
+      {% if category.parent_id == blank %}
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/category/show/{{ category.id }}" data-toggle="collapse" data-target="#id{{ category.id }}">{{ category.properties.name }}</a>
+          <div class="collapse" id="id{{ category.id }}" aria-expanded="false">
+            <ul class="flex-column pl-2 nav">
+              {% for sub_category in g.categories.results %}
+                {% if sub_category.parent_id != blank and sub_category.parent_id == category.id %}
+                      <li class="nav-item"><a class="nav-link py-0" href="/category/show/{{ sub_category.id }}">{{ sub_category.properties.name }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

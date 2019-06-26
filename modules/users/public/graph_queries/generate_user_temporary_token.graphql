@@ -1,6 +1,11 @@
 query generate_user_temporary_token($email: String) {
-  user(email: $email) {
+  user(email: $email, is_deleted: false) {
     id
     temporary_token(valid_for: 24)
+    authentications {
+      raw_info
+      token_expires_at
+      id
+    }
   }
 }

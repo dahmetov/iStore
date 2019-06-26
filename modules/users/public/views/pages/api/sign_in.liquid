@@ -1,0 +1,31 @@
+---
+slug: api/sign-in
+method: post
+response_headers: >
+  {
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*"
+  }
+---
+{% parse_json post_params %}
+  {{ context.post_params }}
+{% endparse_json %}
+{% execute_query "modules/users/sign_in", result_name: "d" , email: post_params.email, password: post_params.password %}
+
+{% if d.user_session_create.email %}
+  {% query_graph 'modules/users/generate_user_temporary_token', result_name: "token", email: d.user_session_create.email %}
+  {{ token | json }}
+{% else %}
+  {% parse_json payload_string %}
+    {
+    "error": "User not found"
+    }
+  {% endparse_json %}
+  {% assign payload = payload_string | parse_json %}
+  {{ payload | json }}
+{% endif %}
+
+{% log d, type: '[INFO] Sing In ' %}
+
+
+

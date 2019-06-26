@@ -10,13 +10,15 @@ redirect_to: /catalog/categories/all
 resource: modules/catalog/category
 flash_notice: "Category successfully created"
 ---
-{% graphql g = 'modules/catalog/categories' %}
+{% graphql g = 'modules/catalog/categories', parent_id: nil %}
 
 {% parse_json category_options %}
   {
   {% for category in g.categories.results %}
-    {% unless forloop.first %},{% endunless %}
-    "{{ category.id }}" : {{ category.properties.name | json }}
+    {% if category.parent_id == blank %}
+      {% unless forloop.first %},{% endunless %}
+      "{{ category.id }}" : {{ category.properties.name | json }}
+    {% endif %}
   {% endfor %}
   }
 {% endparse_json %}

@@ -1,13 +1,12 @@
 ---
-slug: admin
-layout_name: 2col
+slug: api/get
+response_headers: >
+  {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  }
 authorization_policies: [modules/users/admin_user]
 ---
-<div class="container">
-  <div class="list-group">
-    <a href="/admin/products" class="list-group-item list-group-item-action">
-      Products
-    </a>
-    <a href="categories/new" class="list-group-item list-group-item-action">Add new category</a>
-  </div>
-</div>
+
+{% graphql g = 'modules/catalog/categories' %}
+{{ g | json }}
